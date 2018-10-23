@@ -1,0 +1,132 @@
+body{
+    overflow-x: hidden;
+}
+header>h2{
+    text-align: center;
+    font-size: 45px;
+    color: #5678ff;
+    letter-spacing:1px;
+    transition: all 0.8s ease-out 0s;
+}
+header>h2:hover{
+    color: #673AB7;
+    letter-spacing:16px;
+}
+
+header>h2:active{
+    color: #00E676;
+    letter-spacing:32px;
+}
+header>h4{
+    text-align: center;
+    font-size: 15px;
+    color: #ffb74d;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-out 0s;
+}
+header>h4:hover{
+    color: #20AFB42B;
+    letter-spacing: 6px;
+}
+header>h4:active{
+    color: #ffffff;
+    letter-spacing:8px;
+}
+
+div.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.content>textarea{
+    width: 30em;
+    height: 12em;
+    margin: 1em;
+}
+div.content>.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer>p{
+    text-align: center;
+}
+
+/*----------原项目CSS并未定制按钮外观---------------
+------------因此此处添加效果---------------------*/
+button{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: color: #ff8a80;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family: Consolas;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: 0;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.5s ease-out 0s;
+    border-radius: 2px;
+}
+
+button.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 104, 107);
+}
+
+button.btn1{
+    color: rgb(255, 255, 255);
+    background-color: #5678ff;
+    font-size: 15px;
+}
+
+button.btn2{
+    color: rgb(255, 255, 255);
+    background-color: #FFA000;;
+}
+
+/*---------鼠标悬停过渡动画---------*/
+button.btn:hover{
+        background-color: #b35052;
+        color: #efefef;
+    }
+
+button.btn:active{
+        background-color: #882729;
+        color: #afafaf;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 0px 1px;
+    }
+
+button.btn1:hover{
+    color: #212121;
+    background-color: #0089ff;
+    padding: 8px 64px;
+    border-radius: 10px;
+}
+
+button.btn1:active{
+    color: #ffffff;
+    background-color: #004488;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 0px 1px;
+}
+
+button.btn2:hover{
+    color: #ffffff;
+    background-color: #aa8800;
+
+}
+button.btn2:active{
+    color: #ffffff;
+    background-color: #886600;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 0px 1px;
+}
