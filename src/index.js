@@ -1,5 +1,4 @@
-//import "babel-polyfill"; 此处为某些不支持ES6的浏览器所需
-//{ 
+
     function assert(...express){
         const l = express.length;
         const msg = (typeof express[l-1] === "string")? express[l-1]: "Assert Error";
@@ -136,14 +135,8 @@
         return duo2values(hex2duo(str2utf8(str)));
     }
 
-    // ------------------
-    /*141-144，最后的注释均为原始项目代码（事件绑定有问题不能运行）
-     var decodedArea = document.getElementById("decoded-area");
-     var encodedArea = document.getElementById("encoded-area");
-     var decodeBtn = document.getElementById("decode-btn");
-     var encodeBtn = document.getElementById("encode-btn");
-     */
-    //以下我根据原版做的修改，可正常使用
+    
+    //以下为根据原版做的修改，可正常使用
     function encBtn() {
         let i = document.getElementById("decoded-area");//i定义为局部变量
         let j = document.getElementById("encoded-area");
@@ -159,7 +152,7 @@
         let decoded = valuesDecode(j.value);
         i.value = decoded;
     }
-    //添加了复制到剪切板 参考别人的项目
+    
     function copy1() {
         let i = document.getElementById("decoded-area").value;
         let oInput = document.createElement("input");
@@ -183,8 +176,8 @@
         else {
             oInput.value = j;
             document.body.appendChild(oInput);
-            oInput.select(); // 选择对象
-            document.execCommand("Copy"); // 执行浏览器复制命令
+            oInput.select(); 
+            document.execCommand("Copy"); 
             oInput.className = "oInput";
             oInput.style.display="none";
             document.getElementById("xxx").innerHTML = "xxx:“闷声发大财，这是坠吼的！”";
@@ -197,7 +190,7 @@
         if (hh) window.open("https://github.com/sym233/core-values-encoder");
         else alert("滋磁出了偏差……这等于……你也有责任的……");
         hh = confirm("滋磁一下修改此项目的作者？");
-        if (hh) window.open("https://github.com/lollipopnougat");
+        if (hh) window.open("https://github.com/lollipopnougat/core-values-encoder-master-ex/");
         else{
             alert("你们不要老是喜欢弄个大新闻！");
             document.getElementById("xxx").innerHTML = "xxx:“I'm angry!”";
@@ -212,17 +205,3 @@
         j.value = "";
     }
 
-/*
-    encodeBtn.addEventListener("click", e=>{
-        encodedArea.value = "";
-        const encoded = valuesEncode(decodedArea.value);
-        encodedArea.value = encoded;
-    });
-
-    decodeBtn.addEventListener("click", e=>{
-        decodedArea.value = "";
-        const decoded = valuesDecode(encodedArea.value);
-        decodedArea.value = decoded;
-    });
-    */
-//};
